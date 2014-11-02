@@ -1,0 +1,35 @@
+.transform( @transform: scale(1) ) {
+    -webkit-transform: @transform;
+       -moz-transform: @transform;
+            transform: @transform;
+}
+
+.transition( @transition: all .3s ease 0s ) {
+    -webkit-transition: @transition;
+       -moz-transition: @transition;
+        -ms-transition: @transition;
+            transition: @transition;
+}
+
+.box-sizing( @sizing: content-box ) {
+    -webkit-box-sizing: @sizing;
+       -moz-box-sizing: @sizing;
+            box-sizing: @sizing;
+}
+
+.border-radius( @radius: 0 ) {
+    -webkit-border-radius: @radius;
+       -moz-border-radius: @radius;
+            border-radius: @radius;
+}
+
+.position-middle( @width: 100px; @height: 100px; @position: absolute; @zIndex: 0 ) {
+	position: @position;
+	top: 50%;
+	left: 50%;
+	margin-top: -@height/2;
+	margin-left: -@width/2;
+	width: @width;
+	height: @height;
+	z-index: @zIndex;
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Loading-Animations",
+  "version": "0.0.1",
+  "description": "Loading Animations with CSS3 Keyframes",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/novusidea/Loading-Animations"
+  },
+  "keywords": [
+    "CSS3",
+    "Keyframes",
+    "Loading",
+    "Animations"
+  ],
+  "author": "Martin Skroch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/novusidea/Loading-Animations/issues"
+  },
+  "homepage": "https://github.com/novusidea/Loading-Animations",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-less": "^0.12.0",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

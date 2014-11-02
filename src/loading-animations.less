@@ -1,0 +1,198 @@
+@import 'mixins.less';
+
+@animation-color:		#fff;
+@animtaion-width:		100px;
+@animation-duration:	1.6;
+
+@animation-name-one:		loading-one;
+@animation-name-two:		loading-two;
+
+.loading-animation {
+	position: relative;
+	height: @animtaion-width;
+	width: @animtaion-width;
+}
+.loading-animation:before,
+.loading-animation:after {
+	.box-sizing(border-box);
+}
+
+/***** Loading Animation One *****/
+.loading-animation-one {
+	&:before,
+	&:after {
+		content: ' ';
+		position: absolute;
+		border: 3px solid @animation-color;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		.border-radius(@animtaion-width);
+		.transform( scale3d(0, 0, 1) );
+	}
+
+	&:before {
+		-webkit-animation: @animation-name-one 1s ease-in 0s infinite normal;
+		   -moz-animation: @animation-name-one 1s ease-in 0s infinite normal;
+			-ms-animation: @animation-name-one 1s ease-in 0s infinite normal;
+				animation: @animation-name-one 1s ease-in 0s infinite normal;
+	}
+
+	&:after {
+		-webkit-animation: @animation-name-one 1s ease-in .5s infinite normal;
+		   -moz-animation: @animation-name-one 1s ease-in .5s infinite normal;
+			-ms-animation: @animation-name-one 1s ease-in .5s infinite normal;
+				animation: @animation-name-one 1s ease-in .5s infinite normal;
+	}
+}
+
+@-webkit-keyframes @animation-name-one {
+    0% {
+        .transform( scale3d(0, 0, 1) );
+        opacity: 1;
+    }
+    90% {
+       .transform( scale3d(0.9, 0.9, 1) );
+    }
+    100% {
+       .transform( scale3d(1, 1, 1) );
+        opacity: 0;
+    }
+}
+@-moz-keyframes @animation-name-one {
+    0% {
+        .transform( scale3d(0, 0, 1) );
+        opacity: 1;
+    }
+    90% {
+       .transform( scale3d(0.9, 0.9, 1) );
+    }
+    100% {
+       .transform( scale3d(1, 1, 1) );
+        opacity: 0;
+    }
+}
+@-ms-keyframes @animation-name-one {
+    0% {
+        .transform( scale3d(0, 0, 1) );
+        opacity: 1;
+    }
+    90% {
+       .transform( scale3d(0.9, 0.9, 1) );
+    }
+    100% {
+       .transform( scale3d(1, 1, 1) );
+        opacity: 0;
+    }
+}
+@-o-keyframes @animation-name-one {
+    0% {
+        .transform( scale3d(0, 0, 1) );
+        opacity: 1;
+    }
+    90% {
+       .transform( scale3d(0.9, 0.9, 1) );
+    }
+    100% {
+       .transform( scale3d(1, 1, 1) );
+        opacity: 0;
+    }
+}
+@keyframes @animation-name-one {
+    0% {
+        .transform( scale3d(0, 0, 1) );
+        opacity: 1;
+    }
+    90% {
+       .transform( scale3d(0.9, 0.9, 1) );
+    }
+    100% {
+       .transform( scale3d(1, 1, 1) );
+        opacity: 0;
+    }
+}
+
+/***** Loading Animation Two *****/
+.loading-animation-two {
+	&:before,
+	&:after {
+		content: ' ';
+		position: absolute;
+		background: #fff;
+		.border-radius(@animtaion-width);
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	&:before {
+		.transform( scale3d(0.7, 0.7, 1) );
+	}
+
+	&:after {
+		opacity: 0.5;
+		.transform( scale3d(0.7, 0.7, 1) );
+		-webkit-animation: @animation-name-two 1s ease-out 0s infinite normal;
+		   -moz-animation: @animation-name-two 1s ease-out 0s infinite normal;
+			-ms-animation: @animation-name-two 1s ease-out 0s infinite normal;
+				animation: @animation-name-two 1s ease-out 0s infinite normal;
+	}
+}
+
+@-webkit-keyframes @animation-name-two {
+    0% {
+		.transform( scale3d(0.7, 0.7, 1) );
+    }
+    50% {
+		.transform( scale3d(1, 1, 1) );
+    }
+    100% {
+		.transform( scale3d(0.7, 0.7, 1) );
+    }
+}
+@-moz-keyframes @animation-name-two {
+    0% {
+		.transform( scale3d(0.7, 0.7, 1) );
+    }
+    50% {
+		.transform( scale3d(1, 1, 1) );
+    }
+    100% {
+		.transform( scale3d(0.7, 0.7, 1) );
+    }
+}
+@-ms-keyframes @animation-name-two {
+    0% {
+		.transform( scale3d(0.7, 0.7, 1) );
+    }
+    50% {
+		.transform( scale3d(1, 1, 1) );
+    }
+    100% {
+		.transform( scale3d(0.7, 0.7, 1) );
+    }
+}
+@-o-keyframes @animation-name-two {
+    0% {
+		.transform( scale3d(0.7, 0.7, 1) );
+    }
+    50% {
+		.transform( scale3d(1, 1, 1) );
+    }
+    100% {
+		.transform( scale3d(0.7, 0.7, 1) );
+    }
+}
+@keyframes @animation-name-two {
+    0% {
+		.transform( scale3d(0.7, 0.7, 1) );
+    }
+    50% {
+		.transform( scale3d(1, 1, 1) );
+    }
+    100% {
+		.transform( scale3d(0.7, 0.7, 1) );
+    }
+}
