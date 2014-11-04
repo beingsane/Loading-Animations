@@ -1,10 +1,10 @@
-/*! Loading-Animations - v0.0.2 - 2014-11-02
+/*! Loading-Animations - v0.0.2 - 2014-11-03
 * https://github.com/novusidea/Loading-Animations
 * Copyright (c) 2014 Martin Skroch; License: MIT */
 .loading-animation {
+  height: 80px;
+  width: 80px;
   position: relative;
-  height: 100px;
-  width: 100px;
 }
 .loading-animation:before,
 .loading-animation:after {
@@ -12,7 +12,6 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/***** Loading Animation One *****/
 .loading-animation-one:before,
 .loading-animation-one:after {
   content: ' ';
@@ -22,9 +21,9 @@
   right: 0;
   bottom: 0;
   left: 0;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  border-radius: 100px;
+  -webkit-border-radius: 80px;
+  -moz-border-radius: 80px;
+  border-radius: 80px;
   -webkit-transform: scale3d(0, 0, 1);
   -moz-transform: scale3d(0, 0, 1);
   transform: scale3d(0, 0, 1);
@@ -136,15 +135,14 @@
     opacity: 0;
   }
 }
-/***** Loading Animation Two *****/
 .loading-animation-two:before,
 .loading-animation-two:after {
   content: ' ';
   position: absolute;
   background: #fff;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  border-radius: 100px;
+  -webkit-border-radius: 80px;
+  -moz-border-radius: 80px;
+  border-radius: 80px;
   top: 0;
   right: 0;
   bottom: 0;
