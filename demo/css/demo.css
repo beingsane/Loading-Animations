@@ -27,3 +27,7 @@ section:nth-child(1) {
 section:nth-child(2) {
 	background: orange;
 }
+
+section:nth-child(3) {
+	background: darkcyan;
+}
