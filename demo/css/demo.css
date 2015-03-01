@@ -6,8 +6,40 @@ body {
 	margin: 0;
 }
 
+nav {
+    background: #222;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+    
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+
+nav ul li a {
+    color: #fff;
+    padding: 0 10px;
+    line-height: 40px;
+}
+
+main {
+    height: 100%;
+}
+
 section {
 	position: relative;
+    height: 100%;
 }
 
 section div.loading-animation {
@@ -30,4 +62,8 @@ section:nth-child(2) {
 
 section:nth-child(3) {
 	background: darkcyan;
+}
+
+section:nth-child(4) {
+	background: tan;
 }

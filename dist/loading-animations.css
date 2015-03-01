@@ -1,4 +1,4 @@
-/*! Loading-Animations - v0.0.2 - 2015-02-16
+/*! Loading-Animations - v0.0.2 - 2015-02-28
 * https://github.com/novusidea/Loading-Animations
 * Copyright (c) 2015 Martin Skroch; License: MIT */
 .loading-animation {
@@ -351,4 +351,37 @@
     -moz-transform: rotate(135deg);
     transform: rotate(135deg);
   }
+}
+.loading-animation-04 {
+  content: '•';
+  font-size: 160px;
+  left: 50%;
+  line-height: 1;
+  margin-left: -40px;
+  margin-top: -80px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 80px;
+}
+.loading-animation-04:after {
+  -webkit-animation: loading-04 1s ease-in-out 0s infinite normal;
+  -moz-animation: loading-04 1s ease-in-out 0s infinite normal;
+  -ms-animation: loading-04 1s ease-in-out 0s infinite normal;
+  animation: loading-04 1s ease-in-out 0s infinite normal;
+}
+@-webkit-keyframes loading-04 {
+  
+}
+@-moz-keyframes loading-04 {
+  
+}
+@-ms-keyframes loading-04 {
+  
+}
+@-o-keyframes loading-04 {
+  
+}
+@keyframes loading-04 {
+  
 }
